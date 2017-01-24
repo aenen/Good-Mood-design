@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="WpfApplication1.UC_Registration"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApplication1"
+             mc:Ignorable="d" 
+             d:DesignHeight="350" d:DesignWidth="300" SizeChanged="UserControl_SizeChanged" Background="White">
+    <Grid>
+        <StackPanel Name="panel_Registration" Orientation="Vertical" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center">
+            <TextBlock Name="text_Number" Text="Номер:" HorizontalAlignment="Center"/>
+            <TextBox Name="tb_PhoneNumber" Margin="50,0,50,0" MaxWidth="500" TextAlignment="Center"/>
+            <TextBlock Name="text_Name" Text="Имя:" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+            <TextBox Name="tb_Name" Margin="50,0,50,0" MaxWidth="500" TextAlignment="Center"/>
+            <TextBlock Name="text_Email" Text="Email:" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+            <TextBox Name="tb_Email" Margin="50,0,50,0" MaxWidth="500" TextAlignment="Center"/>
+            <TextBlock Name="text_Password" Text="Пароль:" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+            <PasswordBox Name="tb_Password" Margin="50,0,50,0" MaxWidth="500" HorizontalContentAlignment="Center"/>
+            <TextBlock Name="text_ConfirmPassword" Text="Подтвердите пароль:" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+            <PasswordBox Name="tb_ConfirmPassword" Margin="50,0,50,0" MaxWidth="500" HorizontalContentAlignment="Center"/>
+            <Button Name="button_Enter" Content="Зарегистрироваться" Click="button_Enter_Click" Margin="75,25,75,0" MaxWidth="350"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
