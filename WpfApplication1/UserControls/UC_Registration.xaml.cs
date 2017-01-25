@@ -41,6 +41,7 @@ namespace WpfApplication1
             text_ConfirmPassword.FontSize = e.NewSize.Height / 28;
             text_Email.FontSize = e.NewSize.Height / 28;
             text_Name.FontSize = e.NewSize.Height / 28;
+
         }
 
         private void button_Enter_Click(object sender, RoutedEventArgs e)

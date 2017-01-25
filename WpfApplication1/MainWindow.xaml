@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApplication1"
         xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" x:Class="WpfApplication1.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="600" MinHeight="350" MinWidth="525" SizeChanged="Window_SizeChanged">
+        Title="MainWindow" Height="400" Width="600" MinHeight="400" MinWidth="600" SizeChanged="Window_SizeChanged">
     <Grid ShowGridLines="False">
         <Grid.RowDefinitions>
             <RowDefinition Height="1*" MaxHeight="120"/>
@@ -41,7 +41,13 @@
             </Ellipse.Fill>
         </Ellipse>
 
-        <local:UC_Login x:Name="uc_Login" Grid.Column="1" Grid.Row="1"></local:UC_Login>
-        <local:UC_Registration x:Name="uc_Registration" Grid.Column="1" Visibility="Hidden" Grid.Row="1"></local:UC_Registration>
+        <local:UC_Login x:Name="uc_Login" Grid.Column="1" Visibility="Visible" Grid.Row="1"></local:UC_Login>
+        <DockPanel x:Name="panel_Registration" Visibility="Hidden" Opacity="0" Grid.Column="1" Grid.Row="1">
+            <local:UC_RegistrationSteps x:Name="uc_RegistrationSteps" Grid.Column="1" Grid.Row="1" DockPanel.Dock="Top" Margin="10,15,0,0"></local:UC_RegistrationSteps>
+            <Grid>
+            <local:UC_Registration x:Name="uc_Registration" Visibility="Visible"></local:UC_Registration>
+            <local:UC_RegistrationConfirm x:Name="uc_RegistrationConfirm" Grid.Column="1" Visibility="Hidden" Opacity="0" Grid.Row="1"></local:UC_RegistrationConfirm>
+            </Grid>
+        </DockPanel>
     </Grid>
 </Window>
