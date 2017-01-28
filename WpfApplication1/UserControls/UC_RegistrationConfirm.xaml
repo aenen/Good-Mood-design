@@ -10,10 +10,10 @@
              d:DesignHeight="300" d:DesignWidth="300" Background="White" SizeChanged="UserControl_SizeChanged">
     <Grid>
         <StackPanel x:Name="panel_Registration" Orientation="Vertical" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center">
-            <TextBlock Name="text_Info" Text="На ваш номер [номер] был отправлен код подтверждения." Margin="0,0,0,25" FontSize="10" HorizontalAlignment="Center"/>
+            <TextBlock Name="text_Info" Text="На ваш номер был отправлен код подтверждения." Margin="0,0,0,25" FontSize="10" HorizontalAlignment="Center"/>
             <TextBlock Name="text_InsertCode" Text="Введите код:" HorizontalAlignment="Center"/>
-            <TextBox Name="tb_Code" Margin="50,0" MaxWidth="500"/>
-            <Button Name="b_Confirm" Content="Подтвердить" Margin="100,25,100,0" MaxWidth="350" Click="b_Confirm_Click"/>
+            <TextBox Name="tb_Code" Margin="50,0" TextAlignment="Center" MaxWidth="500"/>
+            <Button Name="b_Confirm" Content="Подтвердить" Margin="100,25,100,0" MaxWidth="350"/>
         </StackPanel>
     </Grid>
 </UserControl>

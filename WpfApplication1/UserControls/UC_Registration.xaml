@@ -19,7 +19,7 @@
             <PasswordBox x:Name="tb_Password" Margin="50,0,50,0" MaxWidth="500" HorizontalContentAlignment="Center"/>
             <TextBlock x:Name="text_ConfirmPassword" Text="Подтвердите пароль:" Margin="0,10,0,0" HorizontalAlignment="Center"/>
             <PasswordBox x:Name="tb_ConfirmPassword" Margin="50,0,50,0" MaxWidth="500" HorizontalContentAlignment="Center"/>
-            <Button x:Name="button_Enter" Content="Зарегистрироваться" Click="button_Enter_Click" Margin="75,25,75,0" MaxWidth="350"/>
+            <Button x:Name="button_Enter" Content="Зарегистрироваться" Margin="75,25,75,0" MaxWidth="350"/>
         </StackPanel>
     </Grid>
 </UserControl>

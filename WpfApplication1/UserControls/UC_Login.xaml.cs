@@ -21,12 +21,20 @@ namespace WpfApplication1
     /// </summary>
     public partial class UC_Login : UserControl
     {
-        public event EventHandler RegistrationClicked;
-        public event EventHandler LoginClicked;
-
         public UC_Login()
         {
             InitializeComponent();
+
+            this.IsVisibleChanged += UC_Login_IsVisibleChanged;
+        }
+
+        private void UC_Login_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if ((bool)e.NewValue)
+                return;
+
+            tb_Password.Clear();
+            tb_PhoneNumber.Clear();
         }
 
         private void UserControl_SizeChanged(object sender, SizeChangedEventArgs e)
@@ -38,17 +46,6 @@ namespace WpfApplication1
             text_Password.FontSize = e.NewSize.Height / 29;
             text_Register.FontSize = e.NewSize.Height / 35;
             text_Link.FontSize = e.NewSize.Height / 35;
-        }
-
-        private void Hyperlink_Click(object sender, RoutedEventArgs e)
-        {
-            DoubleAnimation da = new DoubleAnimation(1, 0, new TimeSpan(0, 0, 0, 0, 150));
-            da.Completed += new EventHandler((ob, xz) =>
-            {
-                panel_Login.Visibility = Visibility.Hidden;
-                RegistrationClicked?.Invoke(this,EventArgs.Empty);
-            });
-            this.BeginAnimation(UserControl.OpacityProperty, da);
         }
     }
 }

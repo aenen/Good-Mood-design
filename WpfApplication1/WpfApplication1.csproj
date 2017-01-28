@@ -127,16 +127,13 @@
     <Resource Include="avatar.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="wooden_table.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="avatar2.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="back1.jpg" />
+    <Resource Include="back4.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="back4.png" />
+    <Resource Include="to_Back.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

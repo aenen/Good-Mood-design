@@ -20,11 +20,23 @@ namespace WpfApplication1
     /// </summary>
     public partial class UC_Registration : UserControl
     {
-        public event EventHandler RegistrationClicked;
-
         public UC_Registration()
         {
             InitializeComponent();
+
+            this.IsVisibleChanged += UC_Registration_IsVisibleChanged;
+        }
+
+        private void UC_Registration_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if ((bool)e.NewValue)
+                return;
+
+            tb_ConfirmPassword.Clear();
+            tb_Email.Clear();
+            tb_Name.Clear();
+            tb_Password.Clear();
+            tb_PhoneNumber.Clear();
         }
 
         private void UserControl_SizeChanged(object sender, SizeChangedEventArgs e)
@@ -42,11 +54,6 @@ namespace WpfApplication1
             text_Email.FontSize = e.NewSize.Height / 28;
             text_Name.FontSize = e.NewSize.Height / 28;
 
-        }
-
-        private void button_Enter_Click(object sender, RoutedEventArgs e)
-        {
-            RegistrationClicked?.Invoke(this, EventArgs.Empty);
         }
     }
 }

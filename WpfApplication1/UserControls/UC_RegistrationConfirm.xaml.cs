@@ -20,11 +20,19 @@ namespace WpfApplication1
     /// </summary>
     public partial class UC_RegistrationConfirm : UserControl
     {
-        public event EventHandler ConfirmClicked;
-
         public UC_RegistrationConfirm()
         {
             InitializeComponent();
+
+            this.IsVisibleChanged += UC_RegistrationConfirm_IsVisibleChanged;
+        }
+
+        private void UC_RegistrationConfirm_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if ((bool)e.NewValue)
+                return;
+
+            tb_Code.Clear();
         }
 
         private void UserControl_SizeChanged(object sender, SizeChangedEventArgs e)
@@ -34,11 +42,6 @@ namespace WpfApplication1
 
             tb_Code.FontSize = e.NewSize.Height / 25;
             b_Confirm.FontSize = e.NewSize.Height / 25;
-        }
-
-        private void b_Confirm_Click(object sender, RoutedEventArgs e)
-        {
-            ConfirmClicked?.Invoke(this, EventArgs.Empty);
         }
     }
 }

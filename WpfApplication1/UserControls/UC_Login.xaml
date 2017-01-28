@@ -15,7 +15,7 @@
             <Button Name="button_Enter" Content="Войти" Margin="85,20" MaxWidth="275"/>
             <TextBlock Name="text_Register" Text="Нет учетной записи?" HorizontalAlignment="Center"/>
             <TextBlock Name="text_Link" HorizontalAlignment="Center">
-                <Hyperlink  Click="Hyperlink_Click">
+                <Hyperlink x:Name="hyperlink">
                     Зарегистрируйся!</Hyperlink>
             </TextBlock>
         </StackPanel>

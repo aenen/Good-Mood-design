@@ -59,3 +59,8 @@ C:\Users\student\Downloads\Good-Mood-design-master\Good-Mood-design-master\WpfAp
 C:\Users\student\Downloads\Good-Mood-design-master\Good-Mood-design-master\WpfApplication1\obj\Debug\UserControls\UC_RegistrationConfirm.baml
 C:\Users\student\Downloads\Good-Mood-design-master\Good-Mood-design-master\WpfApplication1\obj\Debug\UserControls\UC_RegistrationSteps.g.cs
 C:\Users\student\Downloads\Good-Mood-design-master\Good-Mood-design-master\WpfApplication1\obj\Debug\UserControls\UC_RegistrationSteps.baml
+C:\#програмування\##Projects\Good_Mood_design\WpfApplication1\obj\Debug\WpfApplication1.csprojResolveAssemblyReference.cache
+C:\#програмування\##Projects\Good_Mood_design\WpfApplication1\obj\Debug\UserControls\UC_RegistrationConfirm.g.cs
+C:\#програмування\##Projects\Good_Mood_design\WpfApplication1\obj\Debug\UserControls\UC_RegistrationSteps.g.cs
+C:\#програмування\##Projects\Good_Mood_design\WpfApplication1\obj\Debug\UserControls\UC_RegistrationConfirm.baml
+C:\#програмування\##Projects\Good_Mood_design\WpfApplication1\obj\Debug\UserControls\UC_RegistrationSteps.baml

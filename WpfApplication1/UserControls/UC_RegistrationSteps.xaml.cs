@@ -36,15 +36,29 @@ namespace WpfApplication1
             border_Confirm.Padding = new Thickness(e.NewSize.Height / 5);
         }
 
-        public void StepConfirm()
+		public void StepFirst() {
+			border_Register.Opacity = 1;
+			border_Register.Background = Brushes.Transparent;
+			text_Register.FontWeight = FontWeights.SemiBold;
+			text_Register.Foreground = Brushes.Black;
+
+			border_Confirm.BorderBrush = Brushes.Transparent;
+			text_Confirm.Opacity = 0.5;
+			text_Confirm.FontWeight = FontWeights.SemiBold;
+
+		}
+
+		public void StepConfirm()
         {
-            border_Register.Opacity = 0.5;
-            border_Register.Background = Brushes.Green;
-            text_Register.FontWeight = FontWeights.Black;
+            //border_Register.Opacity = 0.5;
+            border_Register.Background = Brushes.LightSeaGreen;
+            text_Register.FontWeight = FontWeights.Regular;
             text_Register.Foreground = Brushes.White;
 
             border_Confirm.BorderBrush = Brushes.Black;
             text_Confirm.Opacity = 1;
-        }
+			text_Confirm.FontWeight = FontWeights.SemiBold;
+
+		}
     }
 }
