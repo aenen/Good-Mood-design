@@ -106,7 +106,7 @@ namespace WpfApplication1
                         visiblePanel = null;
                     }
 
-                    VisibilityAnimation(to_Back, 0.25, 150);
+                    VisibilityAnimation(to_Back, 0, 150);
                     VisibilityAnimation(uc_Login, 1, 150);
 
                     visibleUC.Clear();

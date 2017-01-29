@@ -58,6 +58,9 @@
     <Compile Include="UserControls\UC_Login.xaml.cs">
       <DependentUpon>UC_Login.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UC_MainMenu.xaml.cs">
+      <DependentUpon>UC_MainMenu.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\UC_Registration.xaml.cs">
       <DependentUpon>UC_Registration.xaml</DependentUpon>
     </Compile>
@@ -80,6 +83,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="UserControls\UC_Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UC_MainMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

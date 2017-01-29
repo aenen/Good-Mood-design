@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\#програмування\##Projects\Good_Mood_design\WpfApplication1\App.xaml
-52038633889
+6-1524341266
 
-13-1747847071
+14-860452714
 14-1061375871
-MainWindow.xaml;UserControls\UC_Login.xaml;UserControls\UC_Registration.xaml;UserControls\UC_RegistrationConfirm.xaml;UserControls\UC_RegistrationSteps.xaml;
+MainWindow.xaml;UserControls\UC_Login.xaml;UserControls\UC_MainMenu.xaml;UserControls\UC_Registration.xaml;UserControls\UC_RegistrationConfirm.xaml;UserControls\UC_RegistrationSteps.xaml;
 
-False
+True
 

@@ -10,7 +10,7 @@
     <Grid>
         <StackPanel x:Name="panel_Registration" Orientation="Vertical" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center">
             <TextBlock x:Name="text_Number" Text="Номер:" HorizontalAlignment="Center"/>
-            <TextBox x:Name="tb_PhoneNumber" Margin="50,0,50,0" MaxWidth="500" TextAlignment="Center"/>
+            <TextBox x:Name="tb_PhoneNumber" Margin="50,0,50,0" MaxWidth="500" TextAlignment="Center"/>            
             <TextBlock x:Name="text_Name" Text="Имя:" Margin="0,10,0,0" HorizontalAlignment="Center"/>
             <TextBox x:Name="tb_Name" Margin="50,0,50,0" MaxWidth="500" TextAlignment="Center"/>
             <TextBlock x:Name="text_Email" Text="Email:" Margin="0,10,0,0" HorizontalAlignment="Center"/>
